@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Lets Educate</title>
+</head>
+
+<body>
+    
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <a href="images/laptop.jpg"><img src="images/laptop.jpg" alt="logo"></a>
+                
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Search here" oninput="filter()">
+            <div id="searchResults"></div>
+            <button class="btn btn-sm" id="button" onclick="search()">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The future of education is here</p>
+                <p class="text-small">In this world of 7 billion people we need to educate everyone.
+                    The future of world is here.
+                </p>
+                <div class="buttons">
+                    <a href="https://en.wikipedia.org/wiki/Education_in_India" target="_blank" title="wikipedia link">
+                    <button class="btn">Wikipedia</button>
+                </a>
+                   <a href="https://www.youtube.com/watch?v=aKspt58JbsM" target="_blank" title="Youtube video">
+                    <button class="btn">Watch Video</button>
+                </a>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="images/laptop.jpg" alt="Laptop image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="para">
+        <p class="sectionTag text-big">
+            The End of Search is Here</p>
+        <p class="sectionSubTag text-small">Education in India is primarily managed by the state-run
+         public education system, which falls under the command of the government at three levels: 
+         central, state and local. Under various articles of the Indian Constitution and the Right of 
+         Children to Free and Compulsory Education Act, 2009, free and compulsory education is provided
+         as a fundamental right to children aged 6 to 14. The approximate ratio of the total number of 
+         public schools to private schools in India is 10:3
+       </p>
+    </div>
+       <div class="thumbnail">
+        <img src="images/depositphotos_12376816-stock-photo-stack-of-old-books.jpg" alt="Books image" class="imgFluid">
+       </div>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="para">
+        <p class="sectionTag text-big">
+            Transforming Education in India</p>
+        <p class="sectionSubTag text-small">In the 2011 Census, about 73% of the population was
+         literate, with 81% for males and 65% for females. National Statistical Commission surveyed
+         literacy to be 77.7% in 2017–18, 84.7% for male and 70.3% for female.[10] This compares to
+         1981 when the respective rates were 41%, 53% and 29%. In 1951 the rates were 18%, 27% and 9%.
+         India's improved education system is often cited as one of the main contributors to its 
+         economic development.[12][13] Much of the progress, especially in higher education and 
+         scientific research, has been credited to various public institutions.
+       </p>
+    </div>
+       <div class="thumbnail">
+        <img src="images/360_F_552948967_rfWkVCstu3t9ypSnpt2ZePVnuqoi6D6o.jpg" alt="Student image" class="imgFluid">
+       </div>
+    </section>
+
+    <section class="section">
+        <div class="para">
+        <p class="sectionTag text-big">
+            We Grow Together</p>
+        <p class="sectionSubTag text-small">At the primary and secondary level, India has a large 
+        private school system complementing the government run schools, with 29% of students receiving 
+        private education in the 6 to 14 age group.[21] Certain post-secondary technical schools are 
+        also private. The private education market in India had a revenue of US$450 million in 2008, 
+        but is projected to be a US$40 billion market.
+       </p>
+    </div>
+       <div class="thumbnail">
+        <img src="images/brandwire_image_32006459.webp" alt="Group of students" class="imgFluid">
+       </div>
+    </section>
+    
+    <section class="contact" id="contact">
+       <h1 class="text-center">Contact Us</h1>
+       <div class="form">
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+        <div id="nameError" class="error"></div>
+        <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+        <div id="phoneError" class="error"></div>
+        <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+        <div id="emailError" class="error"></div>
+        <textarea class="form-input" name="text" id="text" cols="40" rows="5" placeholder="Your Feedback (Optional)"></textarea>
+        <div id="reactError" class="error"></div>
+        <button class="btn btn-dark btn-sm" id="butt" onclick="submit()">Submit</button>
+        <div id="ThankYou"></div>
+       </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2024 www.letseducate.com - All rights reserved
+        </p>
+    </footer>
+    <script src="resp.js"></script>
+</body>
+
+</html>
